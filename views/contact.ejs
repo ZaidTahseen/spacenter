@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us|Esmeralda</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body style="background-image: url(https://foundersguide.com/wp-content/uploads/2019/01/spa.jpg);background-attachment: fixed;background-repeat: no-repeat;background-size: cover;">
+  
+    <nav class="nav-sec">
+        <img style="height: 140px; width: 240px;" src="logo.PNG" alt="">
+        <a class="navbars" href="/home">Home</a>
+        <a class="navbar" href="">About</a>
+        <a class="navbar" href="/contact">Contact</a>
+        <a class="navbar" href="/events">Events</a>
+      <a class="navbar" href="/mg">Membership & Gifting</a>
+      <a class="navbar" href="/st">Spa Therapies</a>
+      <a class="navbar" href="/Appointments">Book an Appointment</a>
+      </nav>
+    </section>
+    
+    
+        <h1 id="contact-h">Contact Me</h1>
+    
+        <form action="/save-contact" method="post"> 
+    
+            <div class="form-group">
+                <input type="text" placeholder="First Name" name="first_name" required>
+                <input type="text" placeholder="Last Name" name="last_name" required>
+            </div>
+    
+            <div class="form-group">
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="number" placeholder="Phone" name="phone" required>
+            </div>
+    
+            <div class="form-group">
+                <textarea cols="60" rows="5" placeholder="Type your message here " name="message" required></textarea>
+            </div>
+    
+            <div class="form-group"> 
+                <!-- <a class="submit-form"  type="submit" > Submit</a> -->
+                <button type="submit" id="submit-btn">Submit</button>
+            </div>
+    
+    
+        </form>
+    
+    
+    
+        <script>
+            setTimeout( ()=>{
+                document.getElementById('submitmessage') = ""
+            } , 3000)
+        </script>
+    
+     
+</body>
+</html>

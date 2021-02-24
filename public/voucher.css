@@ -1,0 +1,109 @@
+.back-button{
+    border-color: black; 
+    color: red;
+     /* background: #f44336;  */
+     color:black;
+     width: 80px;
+     height: 30px;
+}
+.back-button:hover{
+    transition: 1s;
+    background-color: black;
+    color: white;
+}
+h1{
+    color: black;
+    font-size: 43px;
+    text-align: center;
+  
+    font-family: monospace;
+}
+body{
+    background-attachment: fixed;
+    background-image: url(https://i.pinimg.com/originals/2d/95/e5/2d95e5886fc4c65a6778b5fee94a7d59.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.border{
+    border-style: solid;
+  border-color: white;
+  height: 490px;
+  background-color: white;
+  width: 700px;
+  margin-left: 290px;
+  padding-top: 100px;
+  margin-top:70px;
+}
+#contact-h{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Castoro', serif;
+    font-size: 55px;
+    color: midnightblue;
+}
+
+
+form{
+    /* border: 2px solid red; */
+    width: 600px;
+    margin: auto;
+    /* background-color: white; */
+}
+.form-group{
+    /* border: 2px solid red; */
+    /* margin: 15px 0px; */
+    /* padding: 10px 0px; */
+}
+
+.form-group input{
+    width: 45%;
+    margin: 20px 0px;
+    padding: 20px 5px;
+    border: 3px solid #d10056;
+    color: black;
+    font-size: 15px;
+}
+
+.form-group textarea{
+    width: 80%;
+    margin: 25px 0px;
+    padding: 20px 0px;
+    border: 3px solid #d10056;
+    color:black;
+    font-size: 15px;
+}
+
+
+form{
+    text-align: center;
+    padding: 3px 0px;
+    border-radius: 10px;
+}
+
+.submit-form{
+    text-decoration: none;
+    color:white;
+    background-color: palevioletred;
+    padding: 13px 33px;
+    border-radius: 23px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submit-form:hover{
+    color: black;
+    background-color: lightpink;
+}
+
+
+/* styling button  */
+
+#submit-btn{
+    padding: 5px 18px;
+    letter-spacing: 1px;
+    background-color:lightpink ;
+    border-radius: 20px;
+    font-size: 20px;
+}

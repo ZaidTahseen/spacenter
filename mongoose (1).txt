@@ -1,0 +1,9 @@
+npm i mongoose   
+
+
+create a cluster on mongodb website !!!  
+    ---------- use the cluster connection url to connect 
+
+
+Create a model for storing the data ........
+    How your one data - object is defined 

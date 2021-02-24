@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back-button {
+            border-color: black;
+            color: red;
+            /* background: #f44336;  */
+            color: black;
+            width: 80px;
+            height: 30px;
+        }
+        #contact_section{
+    margin-top: 50px;
+    /* border: 1px solid rgb(88, 36, 36); */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact{
+    border: 1px solid rgb(88, 36, 36);
+    padding: 20px;
+    width: 60%;
+    margin: 15px 0px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.first_name {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    font-size: 40px;
+    /* display: inline; */
+}
+
+.last_name{
+    /* display: inline; */
+    color: red;
+    font-size: 40px;
+}
+
+.accept{
+
+    text-decoration: none;
+}
+        .back-button:hover {
+            transition: 1s;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url(https://i.pinimg.com/originals/e2/71/fd/e271fda72f1e158b5f0569cc72d36d7f.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
+    <a href="/home"><button class="back-button">Back</button></a>
+</body>
+<section id="contact_section">
+<% for (let contact of all_contact ) {%>
+
+    <div class="contact">
+
+        <h2 class="first_name">First Name -  <%= contact.firstname %> </h2>
+        <h2 class="last_name">Last Name - <%= contact.lastname %></h2>
+
+        <h2>Email - <%= contact.email %></h2>
+        <h2>Phone Number ---- <%= contact.phone %></h2>
+
+        <h3><%= contact.message %></h3>
+
+        <a class="accept" href="/contact_delete/<%= contact._id %>">Accept</a>
+
+    </div>
+
+    <% } %>
+</section>
+</html>

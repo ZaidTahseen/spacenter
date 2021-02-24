@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .back-button {
+        border-color: black;
+        color: red;
+        /* background: #f44336;  */
+        color: black;
+        width: 80px;
+        height: 30px;
+    }
+
+    .bpdets {
+        border: 1px solid rgb(88, 36, 36);
+        padding: 10px;
+        width: 60%;
+        text-align: center;
+        margin: 32px 255px;
+        height: 480px;
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+
+    .back-button:hover {
+        transition: 1s;
+        background-color: black;
+        color: white;
+    }
+
+    h1 {
+        color: red;
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        color: red;
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .accept {
+        border: black 2px solid;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+    }
+
+    .accept:hover {
+        transition: 1s;
+        color: white;
+        border-radius: 30px;
+        background-color: black;
+    }
+</style>
+
+<body
+    style="background-image: url(https://i.pinimg.com/originals/e2/71/fd/e271fda72f1e158b5f0569cc72d36d7f.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
+</body>
+<a href="/home"><button class="back-button">Back</button></a>
+<a class="back-button" href="/logout">Log Out</a>
+
+<% for (let contact of bap ) {%>
+    <div class="bpdets">
+        
+
+        <h1>
+            <%= contact.name %>
+        </h1>
+        <h1>
+            <%= contact.email %>
+        </h1>
+        <h1>
+            <%= contact.day %>
+        </h1>
+        <h1>
+            <%= contact.date %>
+        </h1>
+        <h2>
+            <%= contact.time %>
+        </h2>
+        <h2>
+            <%= contact.massage %>
+        </h2>
+        <a class="accept" href="/bap_delete/<%= contact._id %>">Accept</a>
+    </div>
+
+
+
+    <% } %>
+        </div>
+        </body>
+
+</html>

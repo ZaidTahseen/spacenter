@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Login</title>
+    <style>
+        form {
+            border: 4px black solid;
+            width: 450px;
+            height: 400px;
+            margin: auto;
+            text-align: center;
+        }
+
+        input {
+            color: black;
+            font-size: 20px;
+        }
+
+        input[type=submit] {
+            font-size: 23px;
+            cursor: help;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/login" method="POST">
+        <!-- <input type="text" placeholder="Name" required> -->
+        <br><br>
+        <input name="email" type="email" placeholder="email" required>
+        <br><br>
+        <input name="password" type="password" placeholder="password" required>
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+
+</html>
